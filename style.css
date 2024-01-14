@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    border: 1px solid rgb(11, 11, 11);
+    border-radius: 2%;
+    background: linear-gradient(#fabd3b, rgb(223, 236, 123));
+    opacity: 0.8;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+    background: linear-gradient(rgb(195, 26, 26), rgb(153, 22, 22));
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.body {
+    background: linear-gradient(rgb(239, 131, 7), rgb(244, 229, 19));
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.food {
+    background: url("candy2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background: black; */
+}
+
+.scoreboard {
+    color: #fabd3b;
+    padding: 1%;
+    text-align: center;
+    font-size: 2vw;
+    height: 10vh;
+    width: 15vw;
+    border-radius: 5px;
+    border: 2px solid #fabd3b;
+    position: fixed;
+    top: 7%;
+    right: 5%;
+}
